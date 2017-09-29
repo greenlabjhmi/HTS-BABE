@@ -1,0 +1,35 @@
+[ input ]
+fastq_dir = /Users/anthonyshuller/Documents/Schuller/Projects/FeBABE_Upf1_5A/Sequencing_orders/020717_5A_BABE_50bp_paired/022317_analyze5Adata/FASTQ
+fastq_gz_prefixes = ["HCYVJBCXY_1_AGGTTT", "HCYVJBCXY_1_CCTGAG", "HCYVJBCXY_1_GAACCC", "HCYVJBCXY_1_TTCAGA", "HCYVJBCXY_1_TGCTGT", "HCYVJBCXY_1_ACGGTG", "HCYVJBCXY_1_CATCAC", "HCYVJBCXY_1_GTAACA", "HCYVJBCXY_1_GGATCT", "HCYVJBCXY_1_TCCGGG", "HCYVJBCXY_1_AAGCTC", "HCYVJBCXY_1_CTTAAA"]
+sample_names = ["1_80S_nc_AMV", "2_80S_AMV", "3_WT5A_AMV", "4_delCys5A_AMV", "5_K48C_AMV", "6_T126C_AMV", "1_80S_nc_SSIII", "2_80S_SSIII", "3_WT5A_SSIII", "4_delCys5A_SSIII", "5_K48C_SSIII", "6_T126C_SSIII"]
+paired_end = False
+
+
+
+[ parameters ]
+experiment_name = 5AFeBabe_experiment_1
+read1_suffix = _1.fastq.gz
+read2_suffix = _2.fastq.gz
+read1_adaptor_sequence = AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC
+read2_adaptor_sequence = ""
+
+rrna_fasta = /Users/anthonyshuller/Documents/Schuller/Projects/FeBABE_Upf1_5A/hrf_seq/rRNA_Sequences_ucsc_20110829.txt
+pymol_base_script = structure_highlighting/ban_nomenclature_S_cerevisiae_80S_PyMOL_highlighting_base.txt
+pymol_base_script_colorchange = structure_highlighting/ban_nomenclature_S_cerevisiae_80S_PyMOL_colored_by_change_base.txt
+make_interactive_plots = True
+trim_adaptor = True
+discard_untrimmed = True
+min_post_adaptor_length = 20
+first_base_to_keep = 8
+last_base_to_keep = 100
+collapse_identical_reads = False
+force_read_resplit = False
+force_recollapse = False
+force_retrim = False
+force_remapping = False
+force_index_rebuild = False
+force_shapemapper = False
+force_recount = False
+
+[ output ]
+results_dir = /Users/anthonyshuller/Documents/Schuller/Projects/FeBABE_Upf1_5A/Sequencing_orders/020717_5A_BABE_50bp_paired/022317_analyze5Adata/Results

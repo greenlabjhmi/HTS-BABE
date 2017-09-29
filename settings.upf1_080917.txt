@@ -1,0 +1,35 @@
+[ input ]
+fastq_dir = /Users/anthonyschuller/Desktop/Schuller/Projects/HTS-BABE/Sequencing_orders/080317_Upf1libraries_50bp_single_flowcell/080917_Upf1_analyzedata/FASTQ
+fastq_gz_prefixes = ["AGGTTT", "CCTGAG", "GAACCC", "TTCAGA", "TGCTGT", "ACGGTG", "CATCAC", "GTAACA", "GGATCT", "TCCGGG", "AAGCTC", "CTTAAA", "CAAGTT", "GTCCAG", "TGGACC", "ACTTGA", "AATGGT", "CTACTG", "GGCAAC", "TCGTCA", "TAGGCT", "ATTCGG", "CGAATC", "GCCTAA", "CAGCAT", "CGACGT", "GCAGCT", "TACGAT", "TGACCA", "GCCAAT"]
+sample_names = ["1_A_80S_alone", "2_B_del4cysUpf1_rep", "3_C_S335C_Upf1_rep", "4_D_S335Cdel1C_Upf1", "5_E_S335Cdel1C_Upf1_rep", "6_F_A526C_Upf1_rep", "7_G_V533C_Upf1_rep", "8_H_K560C_Upf1_rep", "9_I_K366C_Upf1_rep", "10_J_I693C_Upf1_rep", "11_K_I225C_Upf1", "12_L_I225C_Upf1_rep", "13_M_D310C_Upf1", "14_N_D310C_Upf1_rep", "15_O_T337C_Upf1", "16_P_T337C_Upf1_rep", "17_Q_T344C_Upf1", "18_R_T344C_Upf1_rep", "19_S_S392C_Upf1", "20_T_S392C_Upf1_rep", "21_U_G506C_Upf1", "22_V_G506C_Upf1_rep", "23_W_G628C_Upf1", "24_X_G628C_Upf1_rep", "25_Y_I663C_Upf1", "26_Z_I663C_Upf1_rep", "27_AA_Q783C_Upf1", "28_BB_Q783C_Upf1_rep", "29_CC_del4cysday_Upf1", "30_DD_S335Cday_Upf1"]
+paired_end = False
+
+
+
+[ parameters ]
+experiment_name = Upf1FeBabe_experiment_2
+read1_suffix = .fastq.gz
+read2_suffix = _2.fastq.gz
+read1_adaptor_sequence = AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC
+read2_adaptor_sequence = ""
+
+rrna_fasta = /Users/anthonyschuller/Desktop/Schuller/Projects/HTS-BABE/hrf_seq/rRNA_Sequences_ucsc_20110829.txt
+pymol_base_script = structure_highlighting/ban_nomenclature_S_cerevisiae_80S_PyMOL_highlighting_base.txt
+pymol_base_script_colorchange = structure_highlighting/ban_nomenclature_S_cerevisiae_80S_PyMOL_colored_by_change_base.txt
+make_interactive_plots = True
+trim_adaptor = True
+discard_untrimmed = True
+min_post_adaptor_length = 20
+first_base_to_keep = 8
+last_base_to_keep = 100
+collapse_identical_reads = False
+force_read_resplit = False
+force_recollapse = False
+force_retrim = False
+force_remapping = False
+force_index_rebuild = False
+force_shapemapper = False
+force_recount = False
+
+[ output ]
+results_dir = /Users/anthonyschuller/Desktop/Schuller/Projects/HTS-BABE/Sequencing_orders/080317_Upf1libraries_50bp_single_flowcell/080917_Upf1_analyzedata/Results
